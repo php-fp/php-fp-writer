@@ -1,0 +1,31 @@
+{
+    "authors": [
+        {
+            "name": "Tom",
+            "email": "tomjharding@live.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhpFp\\Writer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpFp\\Writer\\Test\\": "test/"
+        }
+    },
+    "description": "An implementation of the Writer monad in PHP.",
+    "homepage": "http://www.github.com/php-fp/php-fp-writer",
+    "keywords": ["functional", "monad", "writer"],
+    "license": "MIT",
+    "name": "php-fp/php-fp-writer",
+    "scripts": {
+        "test": "vendor/bin/phpunit test"
+    },
+    "time": "2016-04-18",
+    "versions": "1.0.0",
+    "require-dev": {
+        "phpunit/phpunit": "^5.3"
+    }
+}
