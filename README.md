@@ -57,7 +57,7 @@ Of course, `map` transforms the inner value without affecting the outer structur
 
 ## API
 
-In the following type signatures, constructors and static functions are written as one would see in pure languages such as Haskell. The others contain a pipe, where the type before the pipe represents the type of the current IO instance, and the type after the pipe represents the function.
+In the following type signatures, constructors and static functions are written as one would see in pure languages such as Haskell. The others contain a pipe, where the type before the pipe represents the type of the current Writer instance, and the type after the pipe represents the function.
 
 ### `of :: Monoid m => a -> m b -> Writer a (m b)`
 
@@ -200,3 +200,7 @@ list ($x, $log) = Writer::of(2, 'PhpFp\Maybe\Maybe')->run();
 assert($x == 2);
 assert(Maybe::empty()->equals($log));
 ```
+
+## Contributing
+
+Unless there are more typeclasses that people would like to add, I'm not expecting many code changes, but absolutely feel free to submit a PR! Documentation fixes and improvements are _always_ welcome, as are issues about clarity in some of the examples. I want to make this project as helpful as possible!
