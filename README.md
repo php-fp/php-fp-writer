@@ -37,7 +37,7 @@ use PhpFp\Writer\Writer;
 $halve = function ($number) {
     $log = new Monoid(['Halving the number']);
 
-    return Writer::tell('Halving the number')->map(
+    return Writer::tell($log)->map(
         function () use ($number)
         {
             return $number / 2;
